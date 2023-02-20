@@ -1,0 +1,76 @@
+<p>Agregar Equipo</p>
+
+<div class="container">
+
+     <p>Agregar Usuario</p>
+
+
+  <div class="row"> 
+    <div class="col-sm-6">
+
+             <form>
+              <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input [(ngModel)]="usuario.nombre" type="text" class="form-control" name="nombre">
+
+              </div>
+
+
+
+                <div class="mb-3">
+                <label class="form-label">Apellidos</label>
+                <input [(ngModel)]="usuario.apellidos" type="text" class="form-control" name="nombre">
+                </div>
+
+                
+                <div class="mb-3">
+                    <label class="form-label">Edad</label>
+                    <input [(ngModel)]="usuario.edad" type="text" class="form-control" name="nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Oficio</label>
+                        <input [(ngModel)]="usuario.oficio" type="text" class="form-control" name="nombre">
+                        </div>
+
+
+                  <button (click)="agregar()" class="btn btn-primary">Agregar</button>
+
+             </form>
+    </div>
+    <div class="col-sm-6">
+        <form>
+            <div class="mb-3">
+              <label class="form-label">{{usuario.nombre}}</label>
+              
+
+            </div>
+
+
+
+
+
+            <label class="form-label">{{usuario.apellidos}}</label>
+
+            <div class="mb-3">
+                <label class="form-label">{{usuario.edad}}</label>
+                
+  
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">{{usuario.oficio}}</label>
+                
+  
+              </div>
+
+
+           </form>
+
+    </div>
+    <div class="col-sm-6">
+
+
+    </div>
+   </div>
+
+</div>
